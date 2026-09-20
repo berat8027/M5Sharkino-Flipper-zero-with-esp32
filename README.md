@@ -117,7 +117,7 @@ Install via Arduino IDE Library Manager (`Ctrl+Shift+I`):
    - **Board:** `ESP32S3 Dev Module`
    - **Flash Size:** `16MB`
    - **PSRAM:** `OPI PSRAM`
-   - **Partition Scheme:** `16M Flash (3MB APP/9.9MB FATFS)`
+   - **Partition Scheme:** `Custom`
    - **CPU Frequency:** `240MHz`
    - **USB CDC On Boot:** `Enabled`
 3. Select your active COM port
