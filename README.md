@@ -1,4 +1,4 @@
-# 🦈 M5Sharkino — Open Source Flipper Zero Alternative | ESP32-S3 Multi-Tool
+# M5Sharkino — Open Source Flipper Zero Alternative | ESP32-S3 Multi-Tool
 
 **M5Sharkino** is a powerful open-source wireless research and multi-tool device built on the **ESP32-S3 N16R8**, inspired by the Flipper Zero architecture. It combines Sub-GHz RF, RFID, BLE, Wi-Fi, IR, and sensor analysis into a single handheld device with a joystick-navigated OLED menu system.
 
@@ -6,9 +6,9 @@
 
 ---
 
-## 🔥 Key Features
+## Key Features
 
-### 📡 Sub-GHz RF (CC1101 — 433MHz)
+### Sub-GHz RF (CC1101 — 433MHz)
 - Raw RF signal **scan, capture, and replay**
 - **Flipper Zero `.sub` file** read & replay support
 - **Rolling Code analysis** (garage doors, car remotes)
@@ -17,19 +17,19 @@
 - **POCSAG Pager** message decode
 - Long-range LoRa-like mode
 
-### 🔖 RFID (MFRC522)
+### RFID (MFRC522)
 - **Mifare Classic 1K/4K** read, write, clone
 - **UID spoof** (writable UID card support)
 - **Flipper Zero `.nfc` file** import/export
 - **Flipper Zero `.rfid` iButton file** support
 - Raw block dump to SD card
 
-### 📶 Wi-Fi & BLE
+### Wi-Fi & BLE
 - BLE device passive scan with RSSI
 - **BLE advertisement** type classification
 - Wi-Fi AP scanner with security type detection
 
-### 🌡️ Sensor Modules (Hot-Swap Expansion Port)
+### Sensor Modules (Hot-Swap Expansion Port)
 - **DHT11 / DHT22** — Temperature & Humidity (library-free raw protocol)
 - **DS18B20** — 1-Wire temperature sensor
 - **BMP280 / BME280** — Barometric pressure, temperature, altitude
@@ -38,25 +38,25 @@
 - **HC-SR04** — Ultrasonic distance measurement
 - **MQ-2/MQ-135** — Gas / air quality sensor
 
-### 🎮 UI & Navigation
+### UI & Navigation
 - **Flipper Zero-inspired menu architecture** (MenuItem, loopOptions, OptionList)
 - **128x64 SSD1306 OLED** display @ I2C 400kHz
 - **Analog joystick** (X/Y axis + button) navigation
 - **Active buzzer** — boot, menu, success, error, RF/RFID audio feedback
 - **Potentiometer** — analog parameter adjustment
 
-### 💾 Storage
+### Storage
 - **Micro SD card** — RF captures, PCAP logs, Flipper file library
 - **SPIFFS** — Internal flash RF capture storage
 
-### 🔗 Slave Co-Processor Link
+### Slave Co-Processor Link
 - **UART bridge** to ESP32-S3 SuperMini slave (TX→GPIO43, RX→GPIO44)
 - Commands: `JAM`, `SCAN`, `SPEC`, `MITM_P`, `MITM_A`, `PING`, `STOP`, `RESET`
 - Real-time spectrum data streamed to OLED
 
 ---
 
-## 🛠️ Hardware & Pin Configuration
+## Hardware & Pin Configuration
 
 ### Master Device Components
 
@@ -99,7 +99,7 @@
 
 ---
 
-## 📦 Required Libraries
+## Required Libraries
 
 Install via Arduino IDE Library Manager (`Ctrl+Shift+I`):
 
@@ -110,7 +110,7 @@ Install via Arduino IDE Library Manager (`Ctrl+Shift+I`):
 
 ---
 
-## 💻 How to Flash (Master)
+## How to Flash (Master)
 
 1. Open `M5SharkinoCC1101mSD.ino` in **Arduino IDE 2.x**
 2. Select board settings:
@@ -125,7 +125,7 @@ Install via Arduino IDE Library Manager (`Ctrl+Shift+I`):
 
 ---
 
-## 🔗 Slave Co-Processor
+## Slave Co-Processor
 
 The **ESP32-S3 SuperMini** acts as a dedicated RF co-processor managing 4x nRF24L01 modules simultaneously. It communicates with the master via UART and handles:
 
@@ -135,11 +135,11 @@ The **ESP32-S3 SuperMini** acts as a dedicated RF co-processor managing 4x nRF24
 - Passive & Active MITM
 - MouseJack wireless keyboard/mouse exploit testing
 
-👉 **Slave firmware:** [superminiM5SharkinoCC1101mSD](../superminiM5SharkinoCC1101mSD)
+**Slave firmware:** [superminiM5SharkinoCC1101mSD](../superminiM5SharkinoCC1101mSD)
 
 ---
 
-## ⚠️ Legal & Ethical Disclaimer
+## Legal & Ethical Disclaimer
 
 This project is designed exclusively for **educational research, authorized penetration testing, and RF spectrum analysis** in controlled environments where you have explicit permission.
 
