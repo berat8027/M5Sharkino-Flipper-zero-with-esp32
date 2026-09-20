@@ -1,0 +1,26 @@
+# Arduino / ESP32 Build Artifacts
+*.elf
+*.bin
+*.hex
+*.map
+
+# Arduino IDE temp files & builds
+*.bak
+*~
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# IDE files
+.vscode/
+.theia/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
